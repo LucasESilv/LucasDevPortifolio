@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.informations {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.img {
+  width: 80px;
+  max-width: 100%;
+}
+
+.profileInformation {
+  display: flex;
+  gap: 70px;
+  flex-wrap: wrap;
+}
+
+.socialProfileButton {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.iconButton {
+  width: 30px;
+  max-width: 100%;
+}
+
+.footerRotes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.footerRotes button {
+  margin-right: 25px;
+}
+
+.footerRotes p {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .profileInformation {
+    margin-left: 0;
+    gap: 20px;
+  }
+
+  .socialProfileButton {
+    margin-left: 0;
+  }
+
+  .footerRotes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerRotes button {
+    flex: 0 0 auto;
+  }
+}
